@@ -1,0 +1,10 @@
+---
+- package: 
+    name: "{{ item }}"
+  with_items:
+    - bind
+    - bind-utils
+    - bind9
+    - bind9utils
+    - bind9-doc
+  ignore_errors: yes 
